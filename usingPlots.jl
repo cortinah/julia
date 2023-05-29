@@ -21,3 +21,6 @@ function path(funds=100.0, betsize=1.0)
     end
     return (fundspath)
 end
+
+plot(path(),legend=false)
+plot!(path(),legend=false)
