@@ -4,7 +4,7 @@ function spirograph(R, r, rho, color=:blue)
     g(t) = (R-r) * sin(t) - rho * sin((R-r)/r * t)
   
     plot(f, g, 0, max((R-r)/r, r/(R-r))*2pi, aspect_ratio=:equal, color=color,
-     legend=:false, showaxis=false, grid=false)
+     legend=:false, showaxis=false, grid=false, size=[500,500])
   end
 
   spirograph( 1, 3/4, 1/4)
@@ -13,5 +13,5 @@ function spirograph(R, r, rho, color=:blue)
 
   spirograph(1, 1/4, 1)
 
-  spirograph(1, 1/8, 1/4)
+  spirograph(1, 1/8, 1/4, :red)
   spirograph(1, 1/512, 1/1, :red)
