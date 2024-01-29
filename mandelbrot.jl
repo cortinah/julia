@@ -1,4 +1,5 @@
 using Plots 
+# https://docs.juliaplots.org/latest/generated/colorschemes/
 
 const xn = 960
 const yn = 960
@@ -11,7 +12,7 @@ const MAX_ITERS = 80
 function mandelbrot_kernel(c)
     z = c
     for i = 1:MAX_ITERS
-        z = z * z + c
+        z = muladd(z, z, c)
         if abs2(z) > 4
             return i
         end
