@@ -1,4 +1,6 @@
 using Plots 
+
+
 # https://docs.juliaplots.org/latest/generated/colorschemes/
 
 const xn = 960
@@ -37,7 +39,7 @@ function compute_mandelbrot()
     return result
 end
 
-result = compute_mandelbrot()
+result = compute_mandelbrot();
 
 x_range = range(xmin, xmax, xn)
 y_range = range(ymin, ymax, yn)
