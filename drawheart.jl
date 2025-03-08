@@ -1,9 +1,9 @@
 using Plots
 
-f(x) = ((x^2)^(1/3))+((exp(1))/3)*((π-(x^2))^(1/2))*sin(a*π*x)
-a = 30
+f(x) = ((exp(1))/3)*((π-(x^2))^(1/2))*sin(a*π*x) + ((x^2)^(1/3))
+a = 20
 
-plot(f, -sqrt(π) , sqrt(π), legend=:false, showaxis=:false, color=:red, size=(800,800))
+plot(f, -sqrt(π) , sqrt(π), legend=:false, showaxis=:false, grid= :false, color=:red, size=(800,800))
 
 
 # limits sqrt(pi)
