@@ -15,3 +15,6 @@ function spirograph(R, r, rho, color=:blue)
 
   spirograph(1, 1/8, 1/4, :red)
   spirograph(1, 1/512, 1/1, :red)
+  spirograph(1, 1/64, 1/382, :blue)
+  spirograph(1, 1, 1/2, :purple)
+  spirograph(2, 1/5, 1/7)
