@@ -3,7 +3,7 @@ using Plots
 scatter(1:10, 20:-2:1)
 
 function bet(funds::Float64, bet::Float64)
-    odds = 0.9 * funds / (funds + bet)
+    odds = 0.6 * funds / (funds + bet)
 
     if odds > rand()
         return (funds + bet)
